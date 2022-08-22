@@ -1,0 +1,21 @@
+<form class="example-form" >
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>בחר עיר</mat-label>
+      <input type="text"
+             placeholder="בחר"
+             aria-label="Number"
+             matInput
+             [formControl]="myControl"
+             [matAutocomplete]="auto">
+      <mat-autocomplete #auto="matAutocomplete">
+        <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+          {{option}}
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+    
+    <div *ngIf="edited" > 
+    <button type="button" [style.display]="edited ? 'inline-block' : 'none'" class="btn btn-lg btn-outline-primary" (click)="btnClick();"><i class="fa fa-plus"></i> next</button>   
+  </div> 
+  </form>
+ 

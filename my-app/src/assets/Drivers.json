@@ -1,0 +1,8 @@
+{
+    "data": [
+        {"name": "Yehudit", "Tz": 315596387, "street": "shevet gad","city":"rishon lezion"},
+        {"name": "Shira", "Tz": 315596687, "street": "shevet menashe","city":"rishon lezion"},
+        {"name": "Adel", "Tz": 245589751, "street": "shevet yehuda","city":"rishon lezion"} ,
+        {"name": "izik", "Tz": 25548976, "street": "harav elyashiv","city":"rishon lezion"}
+    ]
+}
