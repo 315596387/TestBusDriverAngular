@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DriversDataComponent } from './drivers-data/drivers-data.component';
-import { AddDriverComponent } from './add-driver/add-driver.component';
+import { DriversTableComponent } from './drivers-table/drivers-table.component';
+import { DriverDialogComponent } from './driver-dialog/driver-dialog.component';
 
 
 const routes: Routes = [
-  { path: 'drivers', component: DriversDataComponent },
-  { path: 'addDriver', component: AddDriverComponent }
+  { path: 'drivers', component: DriversTableComponent }
 ];
 
 @NgModule({

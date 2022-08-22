@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AddDriverComponent } from './add-driver.component';
+import { AutoCompleteComponent } from './auto-complete.component';
 
-describe('AddDriverComponent', () => {
-  let component: AddDriverComponent;
-  let fixture: ComponentFixture<AddDriverComponent>;
+describe('AutoCompleteComponent', () => {
+  let component: AutoCompleteComponent;
+  let fixture: ComponentFixture<AutoCompleteComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AddDriverComponent ]
+      declarations: [ AutoCompleteComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(AddDriverComponent);
+    fixture = TestBed.createComponent(AutoCompleteComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

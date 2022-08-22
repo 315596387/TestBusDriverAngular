@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { OutoCompleteComponent } from './outo-complete.component';
+import { DriverDialogComponent } from './driver-dialog.component';
 
-describe('OutoCompleteComponent', () => {
-  let component: OutoCompleteComponent;
-  let fixture: ComponentFixture<OutoCompleteComponent>;
+describe('DriverDialogComponent', () => {
+  let component: DriverDialogComponent;
+  let fixture: ComponentFixture<DriverDialogComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ OutoCompleteComponent ]
+      declarations: [ DriverDialogComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(OutoCompleteComponent);
+    fixture = TestBed.createComponent(DriverDialogComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

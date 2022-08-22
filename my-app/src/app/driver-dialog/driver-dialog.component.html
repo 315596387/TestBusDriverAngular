@@ -1,0 +1,17 @@
+ <div>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">הוספת נהג חדש</h4>
+      <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+        <span aria-hidden="true">×</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <app-auto-complete></app-auto-complete>
+      <input type="text" placeholder=" שם מלא" [(ngModel)]="currentDriver.name">
+      <input type="text" placeholder="תעודת זהות" [(ngModel)]="currentDriver.id">
+      <input type="text" placeholder="רחוב" [(ngModel)]="currentDriver.street">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" (click)="addDriver()">הוסף</button>
+    </div>
+</div> 

@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { OutoCompleteComponent } from './outo-complete/outo-complete.component';
+import { AutoCompleteComponent } from './auto-complete/auto-complete.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
@@ -11,21 +11,21 @@ import { MatRippleModule } from '@angular/material/core';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { DriversDataComponent } from './drivers-data/drivers-data.component';
-import { AddDriverComponent } from './add-driver/add-driver.component';
+import { DriversTableComponent } from './drivers-table/drivers-table.component';
+import { DriverDialogComponent } from './driver-dialog/driver-dialog.component';
 import {TableModule} from 'primeng/table';
 import {InputTextModule } from 'primeng/inputtext';
 import { HttpClientModule } from '@angular/common/http';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
-import { DriversServiceService } from './drivers-service.service';
+import { DriversService } from './services/drivers-service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    OutoCompleteComponent,
-    DriversDataComponent,
-    AddDriverComponent
+    AutoCompleteComponent,
+    DriversTableComponent,
+    DriverDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -43,13 +43,14 @@ import { DriversServiceService } from './drivers-service.service';
     TableModule,
     HttpClientModule,
     InputTextModule,
-    NgbModule,
+    NgbModule,  
     RouterModule.forRoot([
-      { path: 'outo-complete', component: OutoCompleteComponent },
-      { path: '', pathMatch: 'full', redirectTo: 'outo-complete' }
+      { path: 'auto-complete', component: AutoCompleteComponent },
+      { path: '', pathMatch: 'full', redirectTo: 'auto-complete' }
     ])
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents:[DriverDialogComponent]
 })
 export class AppModule { }

@@ -5,11 +5,11 @@ import {map, startWith} from 'rxjs/operators'
 import { Router } from '@angular/router'
 
 @Component({
-  selector: 'app-outo-complete',
-  templateUrl: './outo-complete.component.html',
-  styleUrls: ['./outo-complete.component.css']
+  selector: 'app-auto-complete',
+  templateUrl: './auto-complete.component.html',
+  styleUrls: ['./auto-complete.component.css']
 })
-export class OutoCompleteComponent implements OnInit {
+export class AutoCompleteComponent implements OnInit {
 
   constructor(private router: Router) {
  
