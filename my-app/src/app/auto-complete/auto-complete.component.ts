@@ -26,7 +26,7 @@ export class AutoCompleteComponent implements OnInit {
 
   ngOnInit() {
     debugger;
-     if(this.router.url=='/addDriver')
+     if(this.router.url=='/drivers')
      {this.edited=false;}
     this.filteredOptions = this.myControl.valueChanges.pipe(
       startWith(''),

@@ -16,6 +16,7 @@ export class DriverDialogComponent {
     public activeModal: NgbActiveModal) { }
 
   addDriver() {
+    //debugger;
     this.activeModal.dismiss("add");
     this.driversService.addDriver(this.currentDriver);
   };
